@@ -2,11 +2,155 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+  <!-- Блок шапки сайта, навигация и лого -->
+  <header class="main-header">
+    <nav class="main-navigation">
+      <ul class="site-navigation">
+        <li>
+          <a href="#">Информация</a>
+        </li>
+        <li>
+          <a href="#">Фото и видео</a>
+        </li>
+        <li>
+          <a href="#">Карта штата</a>
+        </li>
+        <li>
+          <a href="#">Гостиницы</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Логотип Седоны, потом абсолютно спозиционировать, ведет на главную страницу сайта -->
+    <a class="header-logo" href="index.html">
+      <img class="sedona-logo" src="img/sedona-logo.png" width="138px" height="70px" alt="Герб региона Седона">
+    </a>
 
+  </header>
+<!-- Основное содержание - фоновое изображение и мелкие изображения на нем -->
+  <main>
+    <section class="intro">
+      <img class="intro-image" src="img/intro-image.png" alt="Alternative info image">
+      <img class="intro-image" src="img/welcome-shape.png" width="1200px" height="57px" alt="Alternative mask">
+    </section>
+    <!-- Вводный блок -->
+    <section class="advantages-intro">
+      <h2 class="features-name">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    </section>
+    <!-- Блок преимуществ - часть 1 -->
+    <section class="advantages">
+      <div class="advantage-item">
+        <b class="advantage-name">Настоящий городок</b>
+        <span class="advantage-nr">&mdash;№1&mdash;</span>
+        <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+      </div>
+      <img class="advantage-img" src="img/advantage-img-1.png" alt="Преимущество номер один">
+    </section>
+    <!-- Блок особенностей -->
+    <section class="features">
+      <div class="features-item">
+        <img class="features-img" src="img/feature-1.png" alt="Домик">
+        <h2 class="features-name">Жилье</h2>
+        <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+      </div>
+      <div class="features-item">
+        <img class="features-img" src="img/feature-2.png" alt="Еда">
+        <h2 class="features-name">Еда</h2>
+        <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+      </div>
+      <div class="features-item">
+        <img class="features-img" src="img/feature-3.png" alt="Подарок">
+        <h2 class="features-name">Сувениры</h2>
+        <p>Не только китайского, но и местного производства!</p>
+      </div>
+    </section>
+    <!-- Блок преимуществ - часть 2 -->
+    <section class="advantages">
+      <img class="advantage-img" src="img/advantage-img-2.png" alt="Преимущество номер два">
+      <div class="advantage-item">
+        <b class="advantage-name">Там есть мост дъявола</b>
+        <span class="advantage-nr">№2</span>
+        <p>Да, по нему можно пройти, если конечно вы осмелитесь!</p>
+      </div>
+    </section>
+    <!-- Блок преимуществ - часть 3 -->
+    <section class="advantages">
+      <div class="advantage-item">
+        <b class="advantage-name">Небольшая площадь</b>
+        <span class="advantage-nr">№3</span>
+        <p>Все достопримечательности находятся очень близко</p>
+      </div>
+      <div class="advantage-item">
+        <b class="advantage-name">Красивая дорога</b>
+        <span class="advantage-nr">№4</span>
+        <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+      </div>
+      <div class="advantage-item">
+        <b class="advantage-name">Мало туристов</b>
+        <span class="advantage-nr">№5</span>
+        <p>Большинство едет в Гранд Каньон и толпится там</p>
+      </div>
+    </section>
+    <!-- Секция поиска и заказа гостиницы -->
+    <section class="order-area">
+      <h2 class="order-area-title">Заинтересовались?</h2>
+      <p>
+        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+      </p>
+      <button class="btn">Поиск гостиницы в Седоне</button>
+    </section>
+  </main>
+  <section class="main-map">
+    <iframe src="https://www.google.ru/maps/place/%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0,+%D0%90%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D0%B0+86336,+%D0%A1%D0%A8%D0%90/@34.8709442,-111.7691651,15.01z/data=!4m5!3m4!1s0x872da132f942b00d:0x5548c523fa6c8efd!8m2!3d34.8697395!4d-111.7609896"></iframe>
+  </section>
+<!--Футер-->
+
+  <footer class="main-footer">
+    <p class="footer-hashtag">
+      #VISITSEDONA
+    </p>
+    <div class="footer-social">
+      <ul>
+        <li><a class="social-button" href="#">Twitter</a></li>
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">Youtube</a></li>
+      </ul>
+    </div>
+    <div class="footer-copyright">
+      <p>Website by</p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/academy.png" alt="HTML Academy">
+      </a>
+    </div>
+  </footer>
+  <!-- Модальное окно -->
+  <section class="modal modal-search">
+    <form class="search-form" action="http://echo.htmlacademy.ru" method="post">
+      <p>
+        <span class="form-text">Дата заезда:</span>
+        <input class="date-from" type="text" name="date-from" placeholder="24 апреля 2017">
+        <img class="calendar" src="#" alt="calendar-pic">
+      </p>
+      <p>
+        <span class="form-text">Дата выезда:</span>
+        <input class="date-to" type="text" name="date-to" placeholder="4 июля 2017">
+        <img class="calendar" src="#" alt="calendar-pic">
+      </p>
+      <p>
+        <span class="form-text">Взрослых:</span>
+        <input type="number" min="0" max="1000" step="1">
+      </p>
+      <p>
+        <span class="form-text">Детей:</span>
+        <input type="number" min="0" max="1000" step="1">
+      </p>
+      <button class="btn btn-search">Найти</button>
+    </form>
+  </section>
     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
   </body>
 </html>
