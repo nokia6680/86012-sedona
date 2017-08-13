@@ -26,7 +26,7 @@
     </nav>
     <!-- Логотип Седоны, потом абсолютно спозиционировать, ведет на главную страницу сайта -->
     <a class="header-logo" href="index.html">
-      <img class="sedona-logo" src="img/sedona-logo.png" width="138px" height="70px" alt="Герб региона Седона">
+      <img class="sedona-logo" src="img/sedona-logo.png" width="138" height="70" alt="Герб региона Седона">
     </a>
   </header>
 <!--Основное содержание-->
@@ -34,9 +34,9 @@
 
 <section class="order-filter">
   <h2 class="visually-hidden">Фильтры выбора условий</h2> <!--Блок фильтров поиска гостиницы + бэк-->
-  <form clas="filter" method="get" action="http://echo.htmlacademy.ru"> <!--20% width-->
+  <form class="filter" method="get" action="http://echo.htmlacademy.ru"> <!--20% width-->
     <fieldset class="services-filter">
-      <legend class="services-filter-lenend">Инфраструктура:</legend>
+      <legend class="services-filter-legend">Инфраструктура:</legend>
       <ul>
         <li class="filter-option">
           <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" checked id="pool">
@@ -54,7 +54,7 @@
     </fieldset>
 
     <fieldset class="type-filter">
-      <legend class="type-filter-lenend">Тип жилья:</legend>
+      <legend class="type-filter-legend">Тип жилья:</legend>
       <ul>
         <li class="filter-option">
           <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" checked id="hotel">
@@ -70,11 +70,19 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset class="price-filter">
-      <legend class="price-filter-lenend">Стоимость в сутки (Р):</legend>
 
-    </fieldset>
+    <div class="range-filter-area">
+      <h2 class="range-filter-title">Стоимость в сутки Р:</h2>
+      <div class="price-range-table">
+        <span>от 0</span>
+        <span class="divider"></span>
+        <span>до 3000</span>
+      </div>
+      <input type="range" name="range" />
+      <p><button class="btn-range" type="submit">Показать</button></p>
+    </div>
   </form>
+
 </section>
 
 <section class="filter-result-header">
@@ -84,7 +92,7 @@
   </p>
   <ul class="results-sorting">
     <li>
-      <span class="sorting-type">Сортировка
+      <span class="sorting-type">Сортировка</span>
     </li>
     <li>
       <button class="sorting-btn" type="button">По цене</button>
@@ -104,28 +112,34 @@
 
 <section class="filter-results">
   <h2 class="visually-hidden">Результаты поиска</h2>
-  <ul class="results-list">
-    <li class="results-item">
+  <article class="results-item">
       <div class="hotel-image">
-        <img src="img/hotel-1.png" alt="Отель Амана Ресорт" width="135" height="90">
+        <img src="img/hotel-1.png" alt="Отель Амара Ресорт" width="135" height="90">
       </div>
       <div class="hotel-name">
-        <h3>Amana Resort &amp; SPA</h3>
+        <h3>Amara Resort &amp; SPA</h3>
       </div>
       <div class="hotel-order-area">
         <span class="hotel-category">Гостиница</span>
         <span class="hotel-price">от 4000 Р.</span>
         <p class="about-book">
-          <a class="button" href="#">Подробнее</a>
-          <button type="submit" class="btn btn-book">Забронировать</button>
+          <a class="btn-about" href="#">Подробнее</a>
+          <a class="btn-book" href="#">Забронировать</a>
         </p>
       </div>
       <div class="hotel-rating">
-        <span class="stars">Рейтинг: 8.5</span>
+        <div class="stars">
+          <span class="stars-item"></span>
+          <span class="stars-item"></span>
+          <span class="stars-item"></span>
+        </div>
+        <div class="rating">
+          <span class="rating-ratio">Рейтинг: 8.5</span>
+        </div>
       </div>
-    </li>
+    </article>
 
-    <li class="results-item">
+    <article class="results-item">
       <div class="hotel-image">
         <img src="img/hotel-3.png" alt="Десерт Куэйл Инн" width="135" height="90">
       </div>
@@ -136,16 +150,23 @@
         <span class="hotel-category">Мотель</span>
         <span class="hotel-price">от 3000 Р.</span>
         <p class="about-book">
-          <a class="button" href="#">Подробнее</a>
-          <button type="submit" class="btn btn-book">Забронировать</button>
+          <a class="btn-about" href="#">Подробнее</a>
+          <a class="btn-book" href="#">Забронировать</a>
         </p>
       </div>
       <div class="hotel-rating">
-        <span class="stars">Рейтинг: 8.9</span>
+        <div class="stars">
+          <span class="stars-item"></span>
+          <span class="stars-item"></span>
+          <span class="stars-item"></span>
+        </div>
+        <div class="rating">
+          <span class="rating-ratio">Рейтинг: 8.5</span>
+        </div>
       </div>
-    </li>
+    </article>
 
-    <li class="results-item">
+    <article class="results-item">
       <div class="hotel-image">
         <img src="img/hotel-2.png" alt="Виллас эт Посо Дьябло" width="135" height="90">
       </div>
@@ -156,15 +177,20 @@
         <span class="hotel-category">Апартаменты</span>
         <span class="hotel-price">от 2000 Р.</span>
         <p class="about-book">
-          <a class="button" href="#">Подробнее</a>
-          <button type="submit" class="btn btn-book">Забронировать</button>
+          <a class="btn-about" href="#">Подробнее</a>
+          <a class="btn-book" href="#">Забронировать</a>
         </p>
       </div>
-    </li>
-    <div class="hotel-rating">
-      <span class="stars">Рейтинг: 9.2</span>
-    </div>
-  </ul>
+      <div class="hotel-rating">
+        <div class="stars">
+          <span class="stars-item"></span>
+          <span class="stars-item"></span>
+        </div>
+        <div class="rating">
+          <span class="rating-ratio">Рейтинг: 8.5</span>
+        </div>
+      </div>
+    </article>
 </section>
 </main>
 
