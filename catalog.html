@@ -30,7 +30,7 @@
     </a>
   </header>
 <!--Основное содержание-->
-<main>
+<main class="container">
 
 <section class="order-filter">
   <h2 class="visually-hidden">Фильтры выбора условий</h2> <!--Блок фильтров поиска гостиницы + бэк-->
@@ -90,24 +90,23 @@
   <p class="results-quantity">
     Найдено: 3
   </p>
-  <ul class="results-sorting">
-    <li>
-      <span class="sorting-type">Сортировка</span>
-    </li>
-    <li>
-      <button class="sorting-btn" type="button">По цене</button>
-    </li>
-    <li>
-      <button class="sorting-btn" type="button">По типу</button>
-    </li>
-    <li>
-      <button class="sorting-btn" type="button">По рейтингу</button>
-    </li>
-  </ul>
-  <ul class="arrows">
-    <li></li>
-    <li></li>
-  </ul>
+  <div class="filter-options">
+    <span class="sorting-type">Сортировка</span>
+    <ul class="results-sorting">
+      <li>
+        <a class="sorting-btn" href="#">По цене</a>
+      </li>
+      <li>
+        <a class="sorting-btn" href="#">По типу</a>
+      </li>
+      <li>
+        <a class="sorting-btn" href="#">По рейтингу</a>
+      </li>
+    </ul>
+    <ul class="arrows">
+      <li><a class="arrow-up" href="#"></a></li>
+      <li><a class="arrow-down" href="#"></a></li>
+    </ul>
 </section>
 
 <section class="filter-results">
@@ -206,10 +205,8 @@
       </ul>
     </div>
     <div class="footer-copyright">
-      <p>Website by</p>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/academy.png" alt="HTML Academy">
-      </a>
+      <span class="footer-link">Website by</p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
     </div>
   </footer>
 </body>
