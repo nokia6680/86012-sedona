@@ -1,4 +1,19 @@
-.intro {
-  min-width: 1200px;
-  background: #d5e3ec url('../img/background.png') no-repeat top;
+body {
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #000000;
+
+  background-color: #f2f2f2;
+}
+
+h2 {
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
 }
