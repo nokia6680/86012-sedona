@@ -26,9 +26,18 @@ body {
 }
 
 .intro {
-  background: #dfedf6 url('../img/background-full.jpg') no-repeat top;
+  background: url('../img/background.jpg') no-repeat top;
   width: 1200px;
   height: 564px;
+}
+
+.intro-info {
+  text-align: center;
+}
+
+.order-filter {
+  background: url('../img/filter-background.jpg') no-repeat top;
+  width: 1200px;
 }
 
 .features-name {
