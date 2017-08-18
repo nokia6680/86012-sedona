@@ -25,11 +25,28 @@ body {
   background-color: #ffffff;
 }
 
-h2 {
+.intro {
+  background: #dfedf6 url('../img/background-full.jpg') no-repeat top;
+  width: 1200px;
+  height: 564px;
+}
+
+.features-name {
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
