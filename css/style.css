@@ -39,6 +39,142 @@ body {
   background: url('../img/filter-background.jpg') no-repeat top;
   width: 1200px;
 }
+/*Форма с ползунками*/
+
+.filter-range {
+  width: 328px;
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 11px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative; /*Для задания разделителя - нужно спозиционировать блок как relative*/
+
+  margin-bottom: 20px;
+  height: 36px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  font-size: 0;
+}
+/*С помощью абсолютно спозиционированного псевдоэлемента добавляется палочка-разделитель*/
+.price-controls::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  /*Позиционирование*/
+  top: 50%;
+  left: 50%;
+  /*размещение на место*/
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+/*Стилилазия полей*/
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  /*Цвет и шрифт наследуется от родительского блока Filter Range*/
+  color: inherit;
+  font: inherit;
+  /*Прозрачность для полей ввода*/
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/*Так как ползунки будут спозиционированы абсолютно, то базовый блок - относительно*/
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+
+}
+/*Стилизация всей шкалы*/
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+/*Стилизация выделенной шкалы значений*/
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+/*Стилизация ползунков, 2 блока, с указанными размерами, скругленные*/
+/*Позиционирование абсолютное, размещаем оба ползунка на шкале*/
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+/*Стилизация hover при наведении на ползунок*/
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+/*Позиционируем оба ползунка по шкале*/
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+/*Стилизация прозрачной кнопки ПОКАЗАТЬ*/
+.btn-range {
+  display: block;
+  margin: 0 auto; /*Центрируем*/
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+/*И Hover для этой кнопки*/
+.btn-range:hover {
+  color: #000000;
+  background: #ffffff;
+}
 
 .features-name {
   font-family: "PT Sans", sans-serif;

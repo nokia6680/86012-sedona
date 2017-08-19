@@ -73,14 +73,19 @@
       </ul>
     </fieldset>
 <!--Правая часть формы-->
-    <div class="range-filter-area">
-      <h2 class="range-filter-title">Стоимость в сутки Р:</h2>
-      <div class="price-range-table">
-        <span>от 0</span>
-        <span class="divider"></span>
-        <span>до 3000</span>
+    <div class="filter-range">
+      <div class="filter-range-title">Стоимость в сутки (Р):</div>
+      <div class="price-controls">
+        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
       </div>
-      <input type="range" name="range" />
+      <div class="range-controls"> <!--Блок шкалы и ползунков-->
+        <div class="scale"> <!--Шкала-->
+          <div class="bar"></div> <!--Выбранная шкала-->
+        </div>
+        <div class="range-toggle range-toggle-min"></div> <!--Ползунок минимального значения-->
+        <div class="range-toggle range-toggle-max"></div> <!--Ползунок максимального значения-->
+      </div>
       <button class="btn-range" type="submit">Показать</button>
     </div>
   </form>
