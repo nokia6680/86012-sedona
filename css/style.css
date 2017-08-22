@@ -13,7 +13,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
-  color: #000000;
+  color: #333333;
   background-color: #f2f2f2;
   width: 1280px;
 }
@@ -24,15 +24,51 @@ body {
   margin: 0 auto;
   background-color: #ffffff;
 }
-
-.intro {
-  background: url('../img/background.jpg') no-repeat top;
-  width: 1200px;
-  height: 564px;
+/*Стилизуем ссылки навбара сошласно стайлгайду*/
+.site-navigation a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
 }
 
-.intro-info {
-  text-align: center;
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: #000000;
+  opacity: 0.302;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+.site-navigation-current a {
+  color: #766357;
+}
+
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.intro-image {
+  background: url('../img/background-final.jpg') no-repeat top;
+  width: 1200px;
+  height: 564px;
 }
 
 .order-filter {
@@ -176,14 +212,34 @@ body {
   background: #ffffff;
 }
 
-.features-name {
+.advantages-intro .features-name {
+  text-align: center;
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
+  color: #000000;
+}
+
+.advantages-intro p {
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.features-name,
+.advantage-name {
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 21px;
   font-weight: bold;
   color: #000000;
 }
+
 
 .visually-hidden {
   position: absolute;
