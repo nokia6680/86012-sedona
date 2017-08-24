@@ -23,6 +23,8 @@ body {
   padding: 0;
   margin: 0 auto;
   background-color: #ffffff;
+  /*Тень пока временно, чтобы границы видеть*/
+  box-shadow: 0 0 25px 0.5px #333333;
 }
 /*Стилизуем ссылки навбара сошласно стайлгайду*/
 .site-navigation a {
@@ -65,11 +67,121 @@ body {
   padding: 0;
 }
 
-.intro-image {
+.intro {
   background: url('../img/background-final.jpg') no-repeat top;
   width: 1200px;
   height: 564px;
 }
+
+.advantages-intro .features-name {
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.advantages-intro p {
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  font-weight: normal;
+}
+
+.features-name,
+.advantage-name {
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #000000;
+}
+
+/*Стилизация текста в блоках с синим фоном*/
+.advantage-item-img {
+  background-color: #81b3d2;
+}
+
+.advantage-item-img b {
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.advantage-item-img p {
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+.features-item p {
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  color: #333333;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+.advantage-item {
+  background-color: #f2f2f2;
+}
+
+/*Секция поиска и заказа гостиницы*/
+
+.order-area-title {
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.order-area p {
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  color: #333333;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .order-filter {
   background: url('../img/filter-background.jpg') no-repeat top;
@@ -210,44 +322,4 @@ body {
 .btn-range:hover {
   color: #000000;
   background: #ffffff;
-}
-
-.advantages-intro .features-name {
-  text-align: center;
-  font-family: "PT Sans", sans-serif;
-  text-transform: uppercase;
-  font-size: 21px;
-  line-height: 26px;
-  color: #000000;
-}
-
-.advantages-intro p {
-  text-align: center;
-  font-family: "PT Sans", sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 26px;
-  color: #333333;
-}
-
-.features-name,
-.advantage-name {
-  font-family: "PT Sans", sans-serif;
-  text-transform: uppercase;
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: bold;
-  color: #000000;
-}
-
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
