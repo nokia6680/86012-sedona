@@ -18,6 +18,24 @@ body {
   width: 1280px;
 }
 
+a {
+  text-decoration: none;
+}
+
+/*Общее для кнопок*/
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
 .container {
   width: 1200px;
   padding: 0;
@@ -157,6 +175,76 @@ body {
   font-size: 14px;
   font-weight: normal;
   line-height: 24px;
+}
+
+/*Кнопки и их поведение*/
+
+/*Размеры шрифта*/
+
+.btn-search,
+.btn-result {
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.btn-book,
+.btn-about {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+/*Фон и поведение для коричневых кнопок*/
+.btn-search,
+.btn-book {
+  background-color: #766357;
+}
+
+.btn-search:hover,
+.btn-book:hover {
+  background-color: #604e43;
+}
+
+.btn-search:active,
+.btn-book:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.302);
+}
+
+/*Фон и поведение голубых кнопок*/
+
+.btn-result,
+.btn-about {
+  background-color: #81b3d2;
+}
+
+.btn-result:hover,
+.btn-about:hover {
+  background-color: #669ec0;
+}
+
+.btn-result:active,
+.btn-about:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.302);
+}
+
+/*Модальное окно - стилизация*/
+
+.modal-form-item input {
+  font: inherit;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.modal-form-item input:hover {
+  background-color: #ebebeb;
+}
+
+.modal-form-item input:focus {
+  background: transparent;
+  border: 2px solid #e5e5e5;
 }
 
 .visually-hidden {
