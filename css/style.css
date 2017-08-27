@@ -104,21 +104,23 @@ a {
 }
 
 .site-navigation li:first-child {
-  margin-left: 6%;
   text-align: left;
+  margin-left: 6%;
 }
 
 .site-navigation li:nth-child(2) {
   text-align: left;
+  margin-right: 4%;
 }
 
 .site-navigation li:nth-child(3) {
   text-align: right;
+  margin-left: 4%;
 }
 
 .site-navigation li:last-child {
-  margin-right: 6%;
   text-align: right;
+  margin-right: 6%;
 }
 
 .header-logo {
