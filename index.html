@@ -106,7 +106,7 @@
       <div class="order-area-full">
         <h2 class="order-area-title">Заинтересовались?</h2>
         <p class="order-area-description">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+          Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <button class="button btn-search">Поиск гостиницы в Седоне</button>
       </div>
@@ -116,26 +116,26 @@
         <form class="search-form" action="http://echo.htmlacademy.ru" method="post">
           <p class="modal-form-item">
             <label for="date-from">Дата заезда:</label>
-            <input class="date-from" type="text" name="date-from" placeholder="24 АПРЕЛЯ 2017" id="date-from">
-            <a class="calendar-pic" href="#">Календарь</a>
+            <input class="date-from" type="text" name="date-from" value="24 АПРЕЛЯ 2017" id="date-from">
+            <a class="calendar-pic" href="#"><span class="visually-hidden">Календарь</span></a>
           </p>
           <p class="modal-form-item">
             <label for="date-to">Дата выезда:</label>
-            <input class="date-to" type="text" name="date-to" placeholder="4 МАЯ 2017" id="date-to">
-            <a class="calendar-pic" href="#">Календарь</a>
+            <input class="date-to" type="text" name="date-to" value="4 МАЯ 2017" id="date-to">
+            <a class="calendar-pic" href="#"><span class="visually-hidden">Календарь</span></a>
           </p>
           <div class="order-clients-ages">
             <div class="clients-adults">
               <label for="adults">Взрослых:</label>
-              <button class="change-btn" type="button">Минус</button>
-              <input type="text" name="adults" id="adults">
-              <button class="change-btn" type="button">Плюс</button>
+              <button class="change-btn" type="button"><span class="visually-hidden">Минус</span></button>
+              <input type="text" name="adults" id="adults" value="2">
+              <button class="change-btn" type="button"><span class="visually-hidden">Плюс</span></button>
             </div>
             <div class="clients-kids">
-              <label for="kids">Детей:</label>
-              <button class="change-btn" type="button">Минус</button>
-              <input type="text" name="kids" id="kids">
-              <button class="change-btn" type="button">Плюс</button>
+              <label for="kids">Дети:</label>
+              <button class="change-btn" type="button"><span class="visually-hidden">Минус</span></button>
+              <input type="text" name="kids" id="kids" value="0">
+              <button class="change-btn" type="button"><span class="visually-hidden">Плюс</span></button>
             </div>
           </div>
           <a class="button btn-result" href="#">Найти</a>

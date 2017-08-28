@@ -1,6 +1,5 @@
 html,
 body {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 0;
 }
@@ -135,16 +134,16 @@ a {
 .intro {
   background: url('../img/background-final.jpg') no-repeat top;
   width: 1200px;
-  height: 564px;
+  height: 508px;
   background-position: right 0px top -56px;
 }
 
 .advantages-intro {
   width: 489px;
-  padding-top: 7px;
+  padding-top: 62px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 51px;
+  padding-bottom: 53px;
 }
 
 .advantages-intro .features-name {
@@ -157,6 +156,7 @@ a {
   font-weight: bold;
   padding: 0;
   margin: 0;
+  margin-bottom: 33px;
 }
 
 .advantages-intro p {
@@ -201,6 +201,8 @@ a {
 
   padding-top: 50px;
   padding-bottom: 62px;
+  padding-left: 59px;
+  padding-right: 59px;
 }
 
 .advantage-item-img b {
@@ -212,6 +214,7 @@ a {
   color: #ffffff;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .advantage-item-img p {
@@ -223,6 +226,7 @@ a {
   line-height: 21px;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .advantage-img {
@@ -237,10 +241,16 @@ a {
 .features-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 400px;
-  min-height: 330px;
+  padding-top: 132px;
+  padding-bottom: 84px;
+}
+
+.features-item .features-name {
+  margin: 0;
+  padding: 0;
 }
 
 .features-item p {
@@ -257,15 +267,38 @@ a {
 .advantage-item {
   background-color: #f2f2f2;
   width: 400px;
-  min-height: 256px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+
+  padding-top: 50px;
+  padding-bottom: 61px;
+}
+
+.advantage-item b {
+  margin: 0;
+  padding: 0;
+}
+
+.advantage-item p {
+  margin: 0;
+  padding: 0;
 }
 
 /*Секция поиска и заказа гостиницы*/
+
+.order-area {
+  padding-top: 55px;
+}
+
+.order-area-full {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 
 .order-area-title {
   font-family: "PT Sans", sans-serif;
@@ -275,10 +308,16 @@ a {
   font-weight: bold;
   color: #000000;
   text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 31px;
 }
 
 .order-area-description {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 435px;
 }
 
 .order-area p {
@@ -299,12 +338,14 @@ a {
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .btn-search {
   display: block;
   margin: 0 auto; /*Центрируем*/
   padding: 33px 140px;
+  margin-top: 50px;
 }
 
 .btn-result {
@@ -346,6 +387,10 @@ a {
   background-color: #81b3d2;
 }
 
+.btn-result {
+  margin-top: 54px;
+}
+
 .btn-result:hover,
 .btn-about:hover {
   background-color: #669ec0;
@@ -369,13 +414,49 @@ a {
   left: 313px;
   right: auto;
   top: 0;
+  padding-top: 55px;
+  padding-left: 56px;
+  padding-right: 57px;
+  padding-bottom: 55px;
+  font-size: 0;
+  line-height: 0px;
+}
+
+.modal-form-item {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  margin-bottom: 30px;
+}
+
+.modal-form-item label {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.modal-form-item:first-of-type label {
+  margin-right: 21px;
+}
+
+.modal-form-item:last-of-type label {
+  margin-right: 18px;
 }
 
 .modal-form-item input {
-  font: inherit;
-
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  width: 346px;
+  height: 38px;
   background-color: #f2f2f2;
   border: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 13px;
+  padding-right: 39px; /*для псевдоэлемента календаря*/
+  box-sizing: border-box;
+
 }
 
 .modal-form-item input:hover {
@@ -386,6 +467,71 @@ a {
   background: transparent;
   border: 2px solid #e5e5e5;
   outline: none;
+  width: 342px;
+  height: 34px;
+}
+
+.clients-adults,
+.clients-kids {
+  margin: 0;
+  padding: 0;
+}
+
+.clients-adults label,
+.clients-kids label {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 0;
+  margin: 0;
+}
+
+.clients-adults label {
+  margin-right: 41px;
+  width: 71px;
+}
+
+.clients-kids label {
+  margin-right: 27px;
+}
+
+.order-clients-ages {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.clients-adults {
+  margin-right: 53px;
+}
+
+.clients-adults input,
+.clients-kids input {
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.change-btn {
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  line-height: 0;
+  cursor: pointer;
 }
 
 /*КАТАЛОГ ГОСТИНИЦ*/
@@ -398,7 +544,7 @@ a {
 
 .filter {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
@@ -406,8 +552,13 @@ a {
   padding-bottom: 30px;
 }
 
-.services-filter:first-child {
+.services-filter:first-of-type {
   margin-left: 6%;
+}
+
+.services-filter:last-of-type {
+  margin-right: 20%;
+  padding-left: 14px;
 }
 
 .order-filter fieldset {
@@ -432,11 +583,11 @@ a {
   color: #ffffff;
 }
 
-.services-filter ul,
-.type-filter ul {
+.services-filter ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 240px;
 }
 
 .filter-option-list li {
@@ -444,11 +595,10 @@ a {
   padding: 0;
 }
 
-
 /*Форма с ползунками*/
 
 .filter-range {
-  width: 328px;
+  width: 318px;
   color: #ffffff;
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
@@ -755,14 +905,18 @@ a {
   margin-bottom: 30px;
   margin-left: 6%;
   margin-right: 6%;
-  min-height: 90px;
   line-height: 0;
+  box-sizing: border-box;
 }
 
 .hotel-name {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.hotel-order-area {
+  line-height: 0;
 }
 
 .hotel-name-title a:hover {
@@ -774,11 +928,16 @@ a {
 }
 
 .hotel-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-left: auto;
 }
 
+
 .rating {
   background-color: #f2f2f2;
+  align-self: flex-end;
 }
 
 .rating span {
