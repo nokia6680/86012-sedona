@@ -187,7 +187,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  min-height: 256px;
+  min-height: 256px; /*Потом убрать*/
 }
 
 .advantage-item-img {
@@ -197,7 +197,7 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  min-width: 400px;
+  width: 400px;
 
   padding-top: 50px;
   padding-bottom: 62px;
@@ -225,6 +225,10 @@ a {
   padding: 0;
 }
 
+.advantage-img {
+  line-height: 0;
+}
+
 .features {
   display: flex;
   justify-content: space-between;
@@ -235,7 +239,7 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  max-width: 400px;
+  width: 400px;
   min-height: 330px;
 }
 
@@ -252,7 +256,7 @@ a {
 
 .advantage-item {
   background-color: #f2f2f2;
-  min-width: 400px;
+  width: 400px;
   min-height: 256px;
 
   display: flex;
@@ -355,6 +359,17 @@ a {
 
 /*Модальное окно - стилизация*/
 
+.modal-search {
+  position: relative;
+}
+
+.search-form {
+  position: absolute;
+  background-color: #ffffff;
+  left: 313px;
+  right: auto;
+  top: 0;
+}
 
 .modal-form-item input {
   font: inherit;
@@ -447,8 +462,10 @@ a {
   line-height: 21px;
 }
 
+/*Для задания разделителя - нужно спозиционировать блок как relative*/
+
 .price-controls {
-  position: relative; /*Для задания разделителя - нужно спозиционировать блок как relative*/
+  position: relative;
 
   margin-bottom: 20px;
   height: 36px;
@@ -706,6 +723,7 @@ a {
 .hotel-image {
   margin-right: 30px;
   padding: 0;
+  line-height: 0;
 }
 
 .hotel-name-title {
@@ -726,7 +744,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
 }
 
 .results-item {
@@ -739,7 +756,7 @@ a {
   margin-left: 6%;
   margin-right: 6%;
   min-height: 90px;
-  min-width: 1056px;
+  line-height: 0;
 }
 
 .hotel-name {
