@@ -356,12 +356,12 @@ a {
 
 .btn-book,
 .btn-about {
-  display: inline-block;
+  display: inline-flex;
   padding: 5px 17px;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  margin: 0px;
+  margin: 0;
 }
 /*Фон и поведение для коричневых кнопок*/
 .btn-search,
@@ -400,6 +400,10 @@ a {
 .btn-about:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.302);
+}
+
+.btn-about {
+  margin-right: 7px;
 }
 
 /*Модальное окно - стилизация*/
@@ -467,8 +471,9 @@ a {
   background: transparent;
   border: 2px solid #e5e5e5;
   outline: none;
-  width: 342px;
-  height: 34px;
+  width: 346px;
+  height: 38px;
+  padding-left: 11px;
 }
 
 .clients-adults,
@@ -484,6 +489,7 @@ a {
   line-height: 26px;
   padding: 0;
   margin: 0;
+  vertical-align: middle;
 }
 
 .clients-adults label {
@@ -870,25 +876,7 @@ a {
   list-style: none;
 }
 
-.hotel-image {
-  margin-right: 30px;
-  padding: 0;
-  line-height: 0;
-}
-
-.hotel-name-title {
-  margin: 0;
-  padding: 0;
-}
-
-.hotel-name-title a {
-  font-size: 21px;
-  line-height: 26px;
-  color: #000000;
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-}
+/*Блок отелей*/
 
 .filter-results {
   display: flex;
@@ -909,16 +897,6 @@ a {
   box-sizing: border-box;
 }
 
-.hotel-name {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.hotel-order-area {
-  line-height: 0;
-}
-
 .hotel-name-title a:hover {
   color: #81b3d2;
 }
@@ -927,13 +905,54 @@ a {
   color: rgba(0, 0, 0, 0.302);
 }
 
+.hotel-image {
+  margin-right: 30px;
+  padding: 0;
+  line-height: 0;
+}
+
+.hotel-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 258px;
+}
+
+.hotel-name h3 {
+  margin: 0;
+  padding: 0;
+  margin-top: -4px;
+  margin-bottom: 12px;
+}
+
+.hotel-name-title a {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.about-book {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  margin-top: 15px;
+}
+
 .hotel-rating {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-left: auto;
 }
-
 
 .rating {
   background-color: #f2f2f2;
