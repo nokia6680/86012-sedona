@@ -109,12 +109,12 @@ a {
 
 .site-navigation li:nth-child(2) {
   text-align: left;
-  margin-right: 4%;
+  margin-right: auto;
 }
 
 .site-navigation li:nth-child(3) {
   text-align: right;
-  margin-left: 4%;
+  margin-left: auto;
 }
 
 .site-navigation li:last-child {
@@ -546,6 +546,7 @@ a {
 .order-filter {
   background: url('../img/filter-background.jpg') no-repeat top;
   width: 1200px;
+  background-position: right 0 top -56px;
 }
 
 .filter {
@@ -563,7 +564,7 @@ a {
 }
 
 .services-filter:last-of-type {
-  margin-right: 20%;
+
   padding-left: 14px;
 }
 
@@ -609,6 +610,7 @@ a {
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   margin-right: 6%;
+  margin-left: auto;
 }
 
 .filter-range-title {
@@ -819,6 +821,12 @@ a {
   position: relative;
 }
 
+.sorting-arrows ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .arrows {
   display: flex;
   flex-direction: row;
@@ -870,12 +878,6 @@ a {
   border-color: transparent transparent #81b3d2 transparent;
 }
 
-.sorting-arrows ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 /*Блок отелей*/
 
 .filter-results {
@@ -883,18 +885,30 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
-
+/*Карточка отеля*/
 .results-item {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-content: space-between;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 6%;
-  margin-right: 6%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 6%;
+  padding-right: 6%;
   line-height: 0;
   box-sizing: border-box;
+}
+
+.results-item:first-of-type {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  border-collapse: collapse;
+}
+
+.results-item:last-of-type {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  border-collapse: collapse;
 }
 
 .hotel-name-title a:hover {
@@ -916,21 +930,13 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
-
-.hotel-details {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 258px;
-}
-
+/*Заголовок имени отеля*/
 .hotel-name h3 {
   margin: 0;
   padding: 0;
   margin-top: -4px;
-  margin-bottom: 12px;
 }
-
+/*Стилизация ссылки внутри контейнера заголовка*/
 .hotel-name-title a {
   font-size: 21px;
   line-height: 26px;
@@ -940,13 +946,39 @@ a {
   padding: 0;
 }
 
+.hotel-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/*Шрифты для спанов в блоке деталей отеля*/
+
+.hotel-details span {
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+/*Блок с ценой, позиционирование по кнопке*/
+
+.hotel-price {
+  margin-right: 30%;
+}
+
+/*Блок с кнопками*/
+
 .about-book {
   margin: 0;
   padding: 0;
   line-height: 0;
-  margin-top: 15px;
+  font-size: 0;
 }
 
+/*Блок со зведками и рейтингом*/
 .hotel-rating {
   display: flex;
   flex-direction: column;
@@ -954,11 +986,23 @@ a {
   margin-left: auto;
 }
 
+.stars {
+  width: 116px;
+  height: 16px;
+  background-color: #f2f2f2;
+}
+
+/*Рейтинг внизу с баллами*/
 .rating {
   background-color: #f2f2f2;
   align-self: flex-end;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  padding-left: 18px;
+  padding-right: 16px;
+  box-sizing: border-box;
 }
-
+/*Стили текста для рейтинга*/
 .rating span {
   font-size: 14px;
   line-height: 21px;
@@ -966,6 +1010,7 @@ a {
   font-weight: normal;
 }
 
+/*Карта города*/
 
 .main-map {
   background: #cbdda9 url('../img/map.jpg') no-repeat center;
