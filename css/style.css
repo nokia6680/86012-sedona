@@ -716,7 +716,7 @@ a {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -727,7 +727,6 @@ a {
 }
 
 .services-filter:last-of-type {
-
   padding-left: 14px;
 }
 
@@ -762,7 +761,79 @@ a {
 
 .filter-option-list li {
   margin-bottom: 33px;
-  padding: 0;
+  vertical-align: middle;
+  height: 23px;
+}
+
+.filter-option-list li:last-child {
+  margin-bottom: 0;
+}
+
+.services-filter-legend {
+  margin-bottom: 26px;
+}
+
+/*Стилизация кастомных чекбоксов*/
+
+input[type="checkbox"] + label {
+  line-height: 21px;
+  font-size: 14px;
+  width: 100px; /*Вот тут вопросссс*/
+  display: block;
+  vertical-align: middle;
+  cursor: pointer;
+  padding-left: 39px;
+  position: relative;
+}
+
+input[type="checkbox"] + label::before {
+  content: '';
+  display: block;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  vertical-align: middle;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%23FFFFFF' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E%0A");
+  left: 0;
+  bottom: 1px;
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: '';
+  display: block;
+  width: 27px;
+  height: 23px;
+  position: absolute;
+  vertical-align: middle;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%23FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E ");
+  left: 0;
+  bottom: 1px;
+}
+
+input[type="checkbox"]:checked:disabled + label::before {
+  content: '';
+  display: block;
+  width: 27px;
+  height: 23px;
+  position: absolute;
+  vertical-align: middle;
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='27px' height='23px' viewBox='0 0 27 23' enable-background='new 0 0 27 23' xml:space='preserve'%3E%3Cg id='Layer_1'%3E%3C/g%3E%3Cg id='Layer_2'%3E%3Cg%3E%3Cpolygon points='7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 '%3E%3C/polygon%3E%3Cpath d='M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0 H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  left: 0;
+  bottom: 1px;
+  cursor: default;
+}
+
+input[type="checkbox"]:disabled + label::before {
+  content: '';
+  display: block;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  vertical-align: middle;
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='23px' height='23px' viewBox='0 0 23 23' enable-background='new 0 0 23 23' xml:space='preserve'%3E%3Cpath d='M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3 C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z'/%3E%3C/svg%3E");
+  left: 0;
+  bottom: 1px;
+  cursor: default;
 }
 
 /*Форма с ползунками*/
@@ -774,6 +845,8 @@ a {
   text-transform: uppercase;
   margin-right: 6%;
   margin-left: auto;
+
+  align-content: flex-start;
 }
 
 .filter-range-title {
@@ -1232,8 +1305,14 @@ a {
   width: 400px;
 }
 
+.footer-social ul {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .footer-copyright {
   margin-right: 6%;
+  margin-left: 88px;
 }
 
 .hashtag-title {
