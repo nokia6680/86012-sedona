@@ -266,6 +266,16 @@ a {
   text-align: center;
 }
 
+/*Для IE*/
+
+.advantage-item-img:first-of-type p {
+  width: 281px;
+}
+
+.advantage-item-img:last-of-type p {
+  width: 304px;
+}
+
 .advantage-item-img .advantage-nr {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -299,6 +309,7 @@ a {
   padding-left: 73px;
   padding-right: 73px;
   box-sizing: border-box;
+
 }
 
 .features-item:nth-of-type(2) {
@@ -311,6 +322,7 @@ a {
   padding-left: 64px;
   padding-right: 64px;
   box-sizing: border-box;
+
 }
 
 .features-item .features-name {
@@ -363,6 +375,19 @@ a {
   text-align: center;
   margin: 0;
   padding: 0;
+  vertical-align: top;
+}
+
+.features-item:first-of-type p {
+  width: 255px;
+}
+
+.features-item:nth-of-type(2) p {
+  width: 288px;
+}
+
+.features-item:last-of-type p {
+  width: 275px;
 }
 
 /*Блоки преимуществ без изображений*/
@@ -429,6 +454,18 @@ a {
   padding-right: 70px;
 }
 
+
+.advantage-item:first-of-type p {
+  width: 220px;
+}
+
+.advantage-item:nth-of-type(2) p {
+  width: 270px;
+}
+
+.advantage-item:last-of-type p {
+  width: 265px;
+}
 /*Отступы заголвков*/
 
 .advantage-item:first-of-type b {
@@ -762,6 +799,15 @@ a {
   cursor: pointer;
 }
 
+.increase:hover,
+.decrease:hover {
+  fill: #000000;
+}
+
+.increase:active,
+.decrease:active {
+  fill: #81b3d2;
+}
 /*КАТАЛОГ ГОСТИНИЦ*/
 
 
@@ -954,6 +1000,8 @@ input[type="checkbox"]:disabled + label::before {
   background: none;
   border: none;
   outline: none;
+
+  line-height: 26px;
 }
 
 /*Так как ползунки будут спозиционированы абсолютно, то базовый блок - относительно*/
