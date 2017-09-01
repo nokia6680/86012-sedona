@@ -280,6 +280,7 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
+  flex-wrap: wrap;
 }
 
 .features-item {
@@ -287,6 +288,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
   width: 400px;
   padding-top: 132px;
   padding-bottom: 82px;
@@ -725,6 +727,7 @@ a {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -1030,6 +1033,7 @@ input[type="checkbox"]:disabled + label::before {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   padding-top: 30px;
   padding-bottom: 30px;
   margin-left: 6%;
@@ -1062,6 +1066,7 @@ input[type="checkbox"]:disabled + label::before {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 /*Расставляем по местам*/
 .results-sorting li:first-child {
@@ -1203,6 +1208,7 @@ input[type="checkbox"]:disabled + label::before {
   flex-direction: row;
   justify-content: flex-start;
   align-content: space-between;
+  flex-wrap: wrap;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 6%;
@@ -1343,6 +1349,8 @@ input[type="checkbox"]:disabled + label::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+
   background-color: #ffffff;
   opacity: 0.902;
   padding-top: 35px;
@@ -1354,16 +1362,14 @@ input[type="checkbox"]:disabled + label::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+
   background-color: #ffffff;
   opacity: 0.902;
   padding-top: 35px;
   padding-bottom: 35px;
   position: relative;
   margin-top: -120px;
-}
-
-.footer-social {
-  width: 400px;
 }
 
 .footer-social ul {
@@ -1387,6 +1393,7 @@ input[type="checkbox"]:disabled + label::before {
   height: 50px;
   background-color: #82b4d2;
   margin-right: 5px;
+  flex-wrap: wrap;
 }
 
 .footer-hashtag {
@@ -1420,6 +1427,7 @@ input[type="checkbox"]:disabled + label::before {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer-copyright a {
