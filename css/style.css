@@ -492,7 +492,7 @@ a {
 /*Секция поиска и заказа гостиницы*/
 
 .order-area {
-  padding-top: 55px;
+  padding-top: 51px;
 }
 
 .order-area-full {
@@ -512,7 +512,7 @@ a {
   text-align: center;
   padding: 0;
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 25px;
 }
 
 .order-area-description {
@@ -546,8 +546,8 @@ a {
 .btn-search {
   display: block;
   margin: 0 auto; /*Центрируем*/
-  padding: 33px 140px;
-  margin-top: 50px;
+  padding: 32px 140px;
+  margin-top: 40px;
 }
 
 .btn-result {
@@ -823,7 +823,7 @@ a {
   flex-wrap: wrap;
   align-items: flex-start;
   width: 100%;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 30px;
 }
 
@@ -865,7 +865,7 @@ a {
 }
 
 .filter-option-list li {
-  margin-bottom: 33px;
+  margin-bottom: 23px;
   vertical-align: middle;
   height: 23px;
 }
@@ -875,7 +875,7 @@ a {
 }
 
 .services-filter-legend {
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 
 /*Стилизация кастомных чекбоксов*/
@@ -957,7 +957,7 @@ input[type="checkbox"]:disabled + label::before {
   position: relative;
 
   margin-bottom: 20px;
-  height: 36px;
+
   border: 2px solid #ffffff;
   border-radius: 2px;
   font-size: 0;
@@ -979,7 +979,7 @@ input[type="checkbox"]:disabled + label::before {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 36px;
+  line-height: 21px;
   vertical-align: top;
   cursor: pointer;
 }
@@ -987,7 +987,16 @@ input[type="checkbox"]:disabled + label::before {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
+  padding: 0;
+  margin: 0;
+}
+
+.price-controls .min-price {
   padding-left: 65px;
+}
+
+.price-controls .max-price {
+  padding-left: 52px;
 }
 
 .price-controls input {
@@ -1040,7 +1049,7 @@ input[type="checkbox"]:disabled + label::before {
 
 /*Стилизация hover при наведении на ползунок*/
 .range-toggle:hover {
-  background: #1c4f80;
+  border: 9px solid #ffffff;
 }
 
 /*Позиционируем оба ползунка по шкале*/
