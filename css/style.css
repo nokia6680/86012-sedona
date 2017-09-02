@@ -559,11 +559,12 @@ a {
 .btn-book,
 .btn-about {
   display: inline-flex;
-  padding: 5px 17px;
+  padding: 3px 16px;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
+  margin-top: 8px;
 }
 /*Фон и поведение для коричневых кнопок*/
 .btn-search,
@@ -1341,7 +1342,7 @@ input[type="checkbox"]:disabled + label::before {
 /*Блок с ценой, позиционирование по кнопке*/
 
 .hotel-price {
-  margin-right: 30%;
+  margin-right: 29%;
 }
 
 /*Блок с кнопками*/
