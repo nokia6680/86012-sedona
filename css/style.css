@@ -1424,9 +1424,10 @@ input[type="checkbox"]:disabled + label::before {
   margin: 0;
   padding: 0;
   font-size: 0;
-  width: 168px;
+  width: 350px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
   margin-left: auto;
   margin-right: auto;
