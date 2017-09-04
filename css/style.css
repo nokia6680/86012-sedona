@@ -618,6 +618,11 @@ a {
 
 .search-form {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 568px;
+  align-items: center;
   background-color: #ffffff;
   left: 316px;
   right: auto;
@@ -626,44 +631,44 @@ a {
   padding-left: 55px;
   padding-right: 55px;
   padding-bottom: 55px;
-  font-size: 0;
-  line-height: 0;
+
+  box-sizing: border-box;
 }
 
 .modal-form-item {
-  font-size: 0;
-  line-height: 0;
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 458px;
 }
 
 
 .modal-form-item label {
   font-size: 14px;
-  font-weight: bold;
   line-height: 26px;
+  font-weight: bold;
   padding: 0;
   margin: 0;
   vertical-align: middle;
 }
 
-.modal-form-item:first-of-type label {
-  margin-right: 22px;
-}
-
-.modal-form-item:last-of-type label {
-  margin-right: 18px;
-}
-
-.modal-form-item input {
+.modal-form-item input[type="text"] {
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
+
   width: 346px;
   height: 38px;
+
   background-color: #f2f2f2;
   border: none;
+
   padding: 0;
   margin: 0;
   padding-left: 13px;
@@ -749,6 +754,8 @@ a {
 .clients-kids {
   margin: 0;
   padding: 0;
+  font-size: 0;
+  line-height: 0;
 }
 
 .clients-adults label,
@@ -762,7 +769,7 @@ a {
 }
 
 .clients-adults label {
-  margin-right: 42px;
+  margin-right: 39px;
 }
 
 .clients-kids label {
@@ -775,9 +782,6 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  line-height: 0;
   width: 458px;
 }
 
@@ -1457,8 +1461,8 @@ input[type="checkbox"]:disabled + label::before {
 
 .social-items li {
   display: flex;
-  width: 50px;
-  height: 50px;
+  width: 46px;
+  height: 48px;
   background-color: #82b4d2;
   margin-right: 5px;
   flex-wrap: wrap;
@@ -1517,7 +1521,7 @@ input[type="checkbox"]:disabled + label::before {
 .social-button {
   position: relative;
   display: block;
-  width: 48px;
+  width: 46px;
   height: 48px;
 }
 
