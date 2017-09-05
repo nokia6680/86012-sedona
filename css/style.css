@@ -49,7 +49,7 @@ a {
   margin: 0 auto;
   background-color: #ffffff;
   /*Тень пока временно, чтобы границы видеть*/
-  box-shadow: 0 0 25px 0.5px rgba(222, 222, 222, 0.8);
+  box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 /*Стилизуем ссылки навбара сошласно стайлгайду*/
 
@@ -60,6 +60,10 @@ a {
   color: #000000;
   font-weight: bold;
   background-color: #ffffff;
+}
+
+.main-header {
+  position: relative;
 }
 
 .site-navigation a {
@@ -170,6 +174,8 @@ a {
   font-weight: normal;
   padding: 0;
   margin: 0;
+
+  width: 500px;
 }
 
 .features-name,
@@ -613,9 +619,18 @@ a {
 
 /*Модальное окно - стилизация*/
 
+.modal {
+  display: none;
+}
+
+.modal-show {
+  display: block;
+}
+
 .modal-search {
   position: relative;
 }
+
 
 .search-form {
   position: absolute;
