@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/normalize.css">
@@ -111,7 +111,7 @@
         <button class="button btn-search">Поиск гостиницы в Седоне</button>
       </div>
       <!-- Модальное окно -->
-      <div class="modal modal-search modal-show">
+      <div class="modal modal-search">
         <h2 class="visually-hidden">Окно поиска гостиницы</h2>
         <form class="search-form" action="http://echo.htmlacademy.ru" method="post">
           <p class="modal-form-item">
@@ -206,32 +206,17 @@
 </div> <!--Конец центровщика-->
 <!--JavaScript для модального окна-->
 <script>
+  var popup = document.querySelector('.modal-search');
+  var hide = document.querySelector('.modal');
+  popup.classList.add('modal-hide');
 
-  var open = document.querySelector(".btn-search");
-  var popup = document.querySelector(".modal-search");
-  var close = document.querySelector(".btn-search");
-  var date_from = document.querySelector("[name=date-from]");
-  var date_to = document.querySelector("[name=date-to]");
-  var form = popup.querySelector("form");
+  var open = document.querySelector('.btn-search');
+  var close = document.querySelector('.btn-search');
 
-  open.addEventListener("click", function (evt) {
+  open.addEventListener('click', function (evt) {
     evt.preventDefault();
-    popup.classList.add("modal-show");
+    popup.classList.toggle('modal-hide');
   })
-
-  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.toggle("modal-search");
-  })
-
-  form.addEventListener("click", function (evt) {
-  evt.preventDefault();
-    if (!date_from.value || !date_to.value) {
-    evt.preventDefault();
-    console.log("Нужно ввести корректную дату заезда и выезда");
-}
-});
-
 </script>
 
 </body>

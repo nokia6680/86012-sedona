@@ -620,17 +620,16 @@ a {
 /*Модальное окно - стилизация*/
 
 .modal {
-  display: none;
+  display: block;
 }
 
-.modal-show {
-  display: block;
+.modal-hide {
+  display: none;
 }
 
 .modal-search {
   position: relative;
 }
-
 
 .search-form {
   position: absolute;
