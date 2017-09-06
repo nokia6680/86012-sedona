@@ -194,6 +194,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  z-index: 10;
 }
 /*Синий фон для отдельного класса*/
 .advantage-with-image {
@@ -506,6 +507,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  z-index: 1;
 }
 
 .order-area-title {
@@ -555,6 +557,7 @@ a {
   margin: 0 auto; /*Центрируем*/
   padding: 32px 0;
   margin-top: 40px;
+  z-index: 1;
 }
 
 .btn-result {
@@ -619,6 +622,11 @@ a {
 
 /*Модальное окно - стилизация*/
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-100px);}
+}
+
 .modal {
   display: block;
 }
@@ -629,6 +637,7 @@ a {
 
 .modal-search {
   position: relative;
+  z-index: 0;
 }
 
 .search-form {
@@ -648,6 +657,9 @@ a {
 
   padding: 55px;
   box-sizing: border-box;
+
+  animation-name: bounce;
+  animation-duration: 1.5s;
 }
 
 .modal-form-item {
