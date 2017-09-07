@@ -12,6 +12,7 @@ body {
   font-weight: normal;
   color: #333333;
   background-color: #f2f2f2;
+  letter-spacing: normal;
 }
 
 a {
@@ -174,7 +175,7 @@ a {
   font-weight: normal;
   padding: 0;
   margin: 0;
-
+  margin-left: -5px;
   width: 500px;
 }
 
@@ -210,8 +211,8 @@ a {
   align-items: center;
   width: 400px;
 
-  padding-top: 50px;
-  padding-bottom: 61px;
+  padding-top: 45px;
+  padding-bottom: 57px;
   padding-left: 57px;
   padding-right: 57px;
 }
@@ -225,10 +226,10 @@ a {
   align-items: center;
   width: 400px;
 
-  padding-top: 48px;
+  padding-top: 44px;
   padding-left: 48px;
   padding-right: 48px;
-  padding-bottom: 62px;
+  padding-bottom: 58px;
 }
 
 .advantage-item-img:first-of-type b {
@@ -285,7 +286,7 @@ a {
 
 .advantage-item-img .advantage-nr {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 .advantage-img {
@@ -334,8 +335,8 @@ a {
 
 .features-item .features-name {
   margin: 0;
-  padding-top: 32px;
-  padding-bottom: 21px;
+  padding-top: 29px;
+  padding-bottom: 24px;
 }
 
 .features-item:first-of-type::before {
@@ -408,7 +409,7 @@ a {
   justify-content: space-around;
   align-items: center;
 
-  padding-top: 50px;
+  padding-top: 47px;
   padding-bottom: 61px;
 
   line-height: 0;
@@ -492,14 +493,14 @@ a {
 }
 
 .advantage-item .advantage-nr {
-  padding-top: 20px;
+  padding-top: 25px;
   padding-bottom: 20px;
 }
 
 /*Секция поиска и заказа гостиницы*/
 
 .order-area {
-  padding-top: 51px;
+  padding-top: 48px;
 }
 
 .order-area-full {
@@ -934,7 +935,7 @@ a {
 
 /*Стилизация кастомных чекбоксов*/
 
-input[type="checkbox"]:first-of-type + label {
+input[type="checkbox"] + label {
   line-height: 21px;
   font-size: 14px;
   vertical-align: middle;
@@ -951,6 +952,7 @@ input[type="checkbox"] + label::before {
   vertical-align: middle;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%23FFFFFF' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E%0A");
   left: 0;
+  bottom: -2px;
 }
 
 input[type="checkbox"]:checked + label::before {
@@ -961,6 +963,7 @@ input[type="checkbox"]:checked + label::before {
   vertical-align: middle;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%23FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E ");
   left: 0;
+  bottom: -2px;
 }
 
 input[type="checkbox"]:checked:disabled + label::before {
@@ -971,6 +974,7 @@ input[type="checkbox"]:checked:disabled + label::before {
   vertical-align: middle;
   background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='27px' height='23px' viewBox='0 0 27 23' enable-background='new 0 0 27 23' xml:space='preserve'%3E%3Cg id='Layer_1'%3E%3C/g%3E%3Cg id='Layer_2'%3E%3Cg%3E%3Cpolygon points='7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 '%3E%3C/polygon%3E%3Cpath d='M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0 H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   left: 0;
+  bottom: -2px;
   cursor: default;
 }
 
@@ -982,6 +986,7 @@ input[type="checkbox"]:disabled + label::before {
   vertical-align: middle;
   background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='23px' height='23px' viewBox='0 0 23 23' enable-background='new 0 0 23 23' xml:space='preserve'%3E%3Cpath d='M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3 C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z'/%3E%3C/svg%3E");
   left: 0;
+  bottom: -2px;
   cursor: default;
 }
 
@@ -999,7 +1004,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .filter-range-title {
-  margin-bottom: 11px;
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
@@ -1050,7 +1055,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .price-controls .max-price {
-  padding-left: 52px;
+  padding-left: 56px;
 }
 
 .price-controls input {
@@ -1063,7 +1068,8 @@ input[type="checkbox"]:disabled + label::before {
   background: none;
   border: none;
   outline: none;
-
+  padding-top: 3px;
+  padding-bottom: 3px;
   line-height: 26px;
 }
 
@@ -1118,14 +1124,18 @@ input[type="checkbox"]:disabled + label::before {
 /*Стилизация прозрачной кнопки ПОКАЗАТЬ*/
 .btn-range {
   display: block;
-  margin: 0 auto; /*Центрируем*/
-  padding: 6px 35px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 85px;
+  margin-right: 95px;
+  padding: 6px 0;
+  width: 133px;
 
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
+  text-align: center;
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -1158,7 +1168,7 @@ input[type="checkbox"]:disabled + label::before {
   font-weight: bold;
   padding: 0;
   margin: 0;
-  margin-right: 50px;
+  margin-right: 47px;
 }
 /*Обнуляем все для списка*/
 .filter-options ul {
@@ -1221,8 +1231,10 @@ input[type="checkbox"]:disabled + label::before {
 .sorting-arrows ul {
   margin: 0;
   padding: 0;
+
   list-style: none;
   position: relative;
+
 }
 
 .arrows {
@@ -1237,8 +1249,8 @@ input[type="checkbox"]:disabled + label::before {
 .arrow-up::after {
   content: '';
   position: absolute;
-  right: 23px;
-  top: 0;
+  right: 28px;
+  top: 1px;
   bottom: auto;
   width: 0;
   height: 0;
@@ -1251,8 +1263,8 @@ input[type="checkbox"]:disabled + label::before {
 .arrow-down::after {
   content: '';
   position: absolute;
-  right: 1px;
-  top: 0;
+  right: 5px;
+  top: 1px;
   bottom: auto;
   width: 0;
   height: 0;
@@ -1265,8 +1277,8 @@ input[type="checkbox"]:disabled + label::before {
 .active-arrow .arrow-down::after {
   content: '';
   position: absolute;
-  right: 1px;
-  top: 0;
+  right: 5px;
+  top: 1px;
   bottom: auto;
   width: 0;
   height: 0;
@@ -1279,8 +1291,8 @@ input[type="checkbox"]:disabled + label::before {
 .active-arrow .arrow-up::after {
   content: '';
   position: absolute;
-  right: 23px;
-  top: 0;
+  right: 28px;
+  top: 1px;
   bottom: auto;
   width: 0;
   height: 0;
@@ -1363,7 +1375,7 @@ input[type="checkbox"]:disabled + label::before {
 .hotel-name h3 {
   margin: 0;
   padding: 0;
-  margin-top: -4px;
+  margin-top: -5px;
 }
 /*Стилизация ссылки внутри контейнера заголовка*/
 .hotel-name-title a {
@@ -1425,7 +1437,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .stars span {
-  margin-left: 6px;
+  margin-left: 5px;
 }
 
 
@@ -1433,10 +1445,10 @@ input[type="checkbox"]:disabled + label::before {
 .rating {
   background-color: #f2f2f2;
   align-self: flex-end;
-  padding-top: 6px;
-  padding-bottom: 5px;
-  padding-left: 18px;
-  padding-right: 16px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 15px;
+  padding-right: 13px;
   box-sizing: border-box;
 }
 /*Стили текста для рейтинга*/
@@ -1520,10 +1532,9 @@ input[type="checkbox"]:disabled + label::before {
   padding: 0;
 }
 
-
 .footer-copyright {
-  margin-right: 77px;
-  margin-left: 80px;
+  margin-right: 100px;
+  margin-left: 104px;
 }
 
 .hashtag-title a {
@@ -1536,9 +1547,9 @@ input[type="checkbox"]:disabled + label::before {
 
 .footer-copyright {
   display: flex;
-  width: 241px;
+  width: 198px;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -1548,7 +1559,18 @@ input[type="checkbox"]:disabled + label::before {
   fill: #231f20;
   width: 115px;
   height: 41px;
-  margin-left: 8px;
+  margin-top: 3px;
+}
+
+.footer-link {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
 }
 
 .footer-copyright a:hover {
