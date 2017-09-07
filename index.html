@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-minimized.css">
     <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
@@ -203,20 +203,8 @@
       </a>
     </div>
   </footer>
-</div> <!--Конец центровщика-->
-<!--JavaScript для модального окна-->
-<script>
-  var popup = document.querySelector('.modal-search');
-
-  popup.classList.add('modal-hide');
-
-  var open = document.querySelector('.btn-search');
-
-  open.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    popup.classList.toggle('modal-hide');
-  })
-</script>
-
+  </div> <!--Конец центровщика-->
+  <!--JavaScript для модального окна-->
+  <script src="js/modal-form-minimized.js"></script>
 </body>
 </html>
