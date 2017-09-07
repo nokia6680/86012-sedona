@@ -90,6 +90,7 @@ a {
 }
 
 .main-navigation ul {
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -138,7 +139,7 @@ a {
 }
 
 .intro {
-  background: url('../img/background-final.jpg') no-repeat top;
+  background: #81b3d2 url('../img/background-final.jpg') no-repeat top;
   width: 1200px;
   height: 508px;
   background-position: right 0px top -56px;
@@ -192,6 +193,7 @@ a {
 /*Стилизация текста в блоках с синим фоном*/
 
 .advantages {
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -205,6 +207,8 @@ a {
 .advantage-item-img:first-of-type {
   background-color: #81b3d2;
   color: #ffffff;
+
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -220,6 +224,8 @@ a {
 .advantage-item-img:last-of-type {
   background-color: #81b3d2;
   color: #ffffff;
+
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -295,6 +301,7 @@ a {
 /*БЛОК приятных особенностей региона Седона*/
 
 .features {
+  display: -webkit-flex;
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
@@ -404,6 +411,7 @@ a {
   background-color: #f2f2f2;
   width: 400px;
 
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -504,6 +512,7 @@ a {
 }
 
 .order-area-full {
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -570,6 +579,7 @@ a {
 
 .btn-book,
 .btn-about {
+  display: -webkit-flex;
   display: inline-flex;
   padding: 3px 16px;
   font-size: 14px;
@@ -623,6 +633,11 @@ a {
 
 /*Модальное окно - стилизация*/
 
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(-100px);}
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(-100px);}
@@ -644,6 +659,7 @@ a {
 .search-form {
   position: absolute;
 
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -659,21 +675,21 @@ a {
   padding: 55px;
   box-sizing: border-box;
 
-  animation-name: bounce;
-  animation-duration: 1.5s;
+  -webkit-animation: bounce 1.5s;
+    animation: bounce 1.5s;
 }
 
 .modal-form-item {
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
+  width: 458px;
 
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-
-  width: 458px;
 }
 
 
@@ -785,6 +801,7 @@ a {
 }
 
 .order-clients-ages {
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -794,6 +811,7 @@ a {
 }
 
 .clients-adults {
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -802,6 +820,7 @@ a {
 }
 
 .clients-kids {
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -867,12 +886,13 @@ a {
 
 
 .order-filter {
-  background: url('../img/filter-background.jpg') no-repeat top;
+  background: #4279a4 url('../img/filter-background.jpg') no-repeat top;
   width: 1200px;
   background-position: right 0 top -56px;
 }
 
 .filter {
+  display: -webkit-flex;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -1150,11 +1170,13 @@ input[type="checkbox"]:disabled + label::before {
 }
 /*Секция фильтров результатов по цене и тд*/
 .filter-result-header {
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+
   padding-top: 30px;
   padding-bottom: 30px;
   margin-left: 6%;
@@ -1184,6 +1206,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 /*Вложенный флекс для фильтров*/
 .results-sorting {
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -1238,6 +1261,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .arrows {
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -1321,12 +1345,14 @@ input[type="checkbox"]:disabled + label::before {
 /*Блок отелей*/
 
 .filter-results {
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 /*Карточка отеля*/
 .results-item {
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -1367,6 +1393,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .hotel-name {
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1388,6 +1415,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .hotel-details {
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1421,6 +1449,7 @@ input[type="checkbox"]:disabled + label::before {
 
 /*Блок со зведками и рейтингом*/
 .hotel-rating {
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1430,6 +1459,7 @@ input[type="checkbox"]:disabled + label::before {
 .stars {
   width: 116px;
 
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -1469,6 +1499,7 @@ input[type="checkbox"]:disabled + label::before {
 /*FOOTER*/
 
 .main-footer {
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1482,6 +1513,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .index-footer {
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1500,6 +1532,8 @@ input[type="checkbox"]:disabled + label::before {
   padding: 0;
   font-size: 0;
   width: 350px;
+
+  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1512,12 +1546,14 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .social-items li {
+  display: -webkit-flex;
   display: flex;
+  flex-wrap: wrap;
+
   width: 46px;
   height: 48px;
   background-color: #82b4d2;
   margin-right: 5px;
-  flex-wrap: wrap;
 }
 
 .footer-hashtag {
@@ -1546,12 +1582,14 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .footer-copyright {
+  display: -webkit-flex;
   display: flex;
-  width: 198px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  width: 198px;
 }
 
 .footer-copyright a {
